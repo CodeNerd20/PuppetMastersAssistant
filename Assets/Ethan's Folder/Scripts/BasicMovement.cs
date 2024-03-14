@@ -7,6 +7,7 @@ public class BasicMovement : MonoBehaviour
     [SerializeField] float moveSpeed;
     [SerializeField] float rotateSpeed;
     [SerializeField] Rigidbody rb;
+
     // Start is called before the first frame update
     void Start()
     {
