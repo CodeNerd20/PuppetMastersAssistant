@@ -21,6 +21,6 @@ public class BasicMovement : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
 
         transform.Translate(Vector3.forward * moveSpeed * verticalInput * Time.deltaTime);
-        transform.Rotate(Vector3.up * rotateSpeed * horizontalInput * Time.deltaTime);
+        transform.Translate(Vector3.right * moveSpeed * horizontalInput * Time.deltaTime);
     }
 }
