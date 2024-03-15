@@ -41,18 +41,23 @@ public class Inventory : MonoBehaviour
         {
             slotsUpdater = 0;
         }
-        if (itemInHands == 3)
 
-
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            handSelected += 1;
-        }
-        if (handSelected > 3)
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             handSelected = 0;
         }
-        
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            handSelected = 1;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            handSelected = 2;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            handSelected = 3;
+        }
         itemInHands = slots[handSelected];
         if (Input.GetKeyDown(KeyCode.G) && slots[handSelected] > 0)
         {
