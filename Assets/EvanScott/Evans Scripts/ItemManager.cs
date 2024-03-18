@@ -26,6 +26,16 @@ public class ItemManager : MonoBehaviour
             grabable = false;
             itemToGrab = null;
         }
+        if (Input.GetKeyDown(KeyCode.Mouse0) && Interactable)
+        {
+            
+            
+                
+                    Debug.Log("attempted interact");
+                    itemToInteract.GetComponent<button>().Invoke("Interacted", 0);
+               
+            
+        }
     }
     private void OnTriggerStay(Collider other)
     {
@@ -36,6 +46,16 @@ public class ItemManager : MonoBehaviour
             itemToGrab = other.gameObject;
             other.gameObject.GetComponent<Outline>().enabled = true;
         }
+        if (other.gameObject.CompareTag("Interactable"))
+        {
+            other.gameObject.GetComponent<Outline>().enabled = true;
+            
+                
+                    Interactable = true;
+                    itemToInteract = other.gameObject;
+                
+            
+        }
     }
     private void OnTriggerExit(Collider other)
     {
@@ -43,6 +63,11 @@ public class ItemManager : MonoBehaviour
         {
             other.gameObject.GetComponent<Outline>().enabled = false;
             grabable = false;
+        }
+        if (other.gameObject.CompareTag("Interactable"))
+        {
+            other.gameObject.GetComponent<Outline>().enabled = false;
+            Interactable = false;
         }
     }
 }
