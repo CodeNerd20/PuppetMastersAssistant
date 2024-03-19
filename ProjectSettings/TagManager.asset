@@ -5,11 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Item
+  - Interactable
+  - burner
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - burner
   - Water
   - UI
   - 
