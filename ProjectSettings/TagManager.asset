@@ -6,11 +6,12 @@ TagManager:
   tags:
   - Item
   - Interactable
+  - burner
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - burner
   - Water
   - UI
   - 
