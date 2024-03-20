@@ -6503,8 +6503,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.46809992, y: 3.3500972, z: 0.48060274}
+  m_Center: {x: 0.00030686744, y: 1.1750486, z: 0.07684595}
 --- !u!23 &433529873
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6564,8 +6564,8 @@ Transform:
   m_GameObject: {fileID: 433529871}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.08, y: 0, z: -15.62}
-  m_LocalScale: {x: 3.9257, y: 0.70044976, z: 3.9257}
+  m_LocalPosition: {x: 11.08, y: -0.017, z: -15.62}
+  m_LocalScale: {x: 3.9257, y: 1, z: 3.9257}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 93825070}
@@ -16899,7 +16899,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  rotateSpeed: 180
   rb: {fileID: 2274731997685678613}
 --- !u!1 &415210348624711059
 GameObject:
@@ -17955,7 +17954,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 887622177076494251}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fb27c699cdf1c8b49a48746847c4c1a9, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
