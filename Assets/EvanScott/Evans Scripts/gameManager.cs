@@ -6,4 +6,5 @@ public class gameManager : MonoBehaviour
 {
     public GameObject[] heldItems;
     public GameObject[] items;
+    public int itemsBurned;
 }
