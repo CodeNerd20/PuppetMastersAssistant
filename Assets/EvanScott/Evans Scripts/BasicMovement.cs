@@ -20,7 +20,7 @@ public class BasicMovement : MonoBehaviour
 
         //Vector3 localDirection = transform.InverseTransformDirection(horizontalInput, rb.velocity.y, verticalInput);
         Vector3 move = new Vector3(horizontalInput, 0, verticalInput).normalized * moveSpeed;
-        rb.AddRelativeForce(move);
+        rb.AddRelativeForce(move,ForceMode.Impulse);
 
         rb.maxLinearVelocity = moveSpeed;
 
