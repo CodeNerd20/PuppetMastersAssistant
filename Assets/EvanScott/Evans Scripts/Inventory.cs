@@ -59,7 +59,7 @@ public class Inventory : MonoBehaviour
             handSelected = 3;
         }
         itemInHands = slots[handSelected];
-        if (Input.GetKeyDown(KeyCode.G) && slots[handSelected] > 0)
+        if (Input.GetKeyDown(KeyCode.Q) && slots[handSelected] > 0)
         {
             Instantiate(items[itemInHands - 1], itemDropPoint.transform.position, itemDropPoint.transform.rotation);
             slots[handSelected] = 0;

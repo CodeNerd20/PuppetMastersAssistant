@@ -18,7 +18,7 @@ public class ItemManager : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F) && grabable && inventory.slots[inventory.handSelected] == 0)
+        if (Input.GetKeyDown(KeyCode.E) && grabable && inventory.slots[inventory.handSelected] == 0)
         {
             inventory.slots[inventory.handSelected] = itemToGrab.GetComponent<itemIdentifier>().itemNum;
             Destroy(itemToGrab);
