@@ -6,6 +6,7 @@ public class BasicMovement : MonoBehaviour
 {
     [SerializeField] float moveSpeed;
     [SerializeField] Rigidbody rb;
+    public Vector3 move;
 
     void Start()
     {
@@ -17,9 +18,8 @@ public class BasicMovement : MonoBehaviour
     {
         float horizontalInput = Input.GetAxisRaw("Horizontal");
         float verticalInput = Input.GetAxisRaw("Vertical");
-
         //Vector3 localDirection = transform.InverseTransformDirection(horizontalInput, rb.velocity.y, verticalInput);
-        Vector3 move = new Vector3(horizontalInput, 0, verticalInput).normalized * moveSpeed;
+         move = new Vector3(horizontalInput, 0, verticalInput).normalized * moveSpeed;
         rb.AddRelativeForce(move,ForceMode.Impulse);
 
         rb.maxLinearVelocity = moveSpeed;
