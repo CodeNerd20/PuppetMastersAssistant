@@ -6641,6 +6641,9 @@ MonoBehaviour:
   - {fileID: 8777337249456185692, guid: 1a301de30a7fb1349a8dcbdc84acf943, type: 3}
   - {fileID: 6133736233579482229, guid: 4ef0a7781afd98b4e8149d5beb17685b, type: 3}
   itemsBurned: 0
+  toothbrushUsed: 0
+  bedMade: 0
+  lightsOn: 1
 --- !u!1 &425067992
 GameObject:
   m_ObjectHideFlags: 0
@@ -8681,9 +8684,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 383108949025894942, guid: ca1db49a0138dfc4a84ca39709185857, type: 3}
+      propertyPath: m_TagString
+      value: Item
+      objectReference: {fileID: 0}
     - target: {fileID: 1489923179529374606, guid: ca1db49a0138dfc4a84ca39709185857, type: 3}
       propertyPath: m_Name
       value: House
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263028440223973711, guid: ca1db49a0138dfc4a84ca39709185857, type: 3}
+      propertyPath: m_Name
+      value: Cylinder
       objectReference: {fileID: 0}
     - target: {fileID: 4707310535212235034, guid: ca1db49a0138dfc4a84ca39709185857, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15987,6 +15998,10 @@ MonoBehaviour:
   interacted: 0
   doorButton: 1
   player: {fileID: 887622177076494251}
+  toothbrush: 0
+  bed: 0
+  breakerBox: 0
+  gameManager: {fileID: 0}
 --- !u!65 &1530906979
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17003,7 +17018,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1844346960}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1844346963
 Camera:
   m_ObjectHideFlags: 0
@@ -18116,6 +18131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 7
   rb: {fileID: 2274731997685678613}
+  move: {x: 0, y: 0, z: 0}
 --- !u!1 &415210348624711059
 GameObject:
   m_ObjectHideFlags: 0
@@ -18586,7 +18602,7 @@ Transform:
   m_GameObject: {fileID: 887622177076494251}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.36, y: 0.12, z: -107.09}
+  m_LocalPosition: {x: 18.03, y: 0.74, z: -108.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -18666,7 +18682,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &6121588837492413944
 GameObject:
   m_ObjectHideFlags: 0
