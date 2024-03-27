@@ -28,13 +28,9 @@ public class ItemManager : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Mouse0) && Interactable)
         {
-            
-            
-                
+
                     Debug.Log("attempted interact");
                     itemToInteract.GetComponent<button>().Invoke("Interacted", 0);
-               
-            
         }
     }
     private void OnTriggerStay(Collider other)
